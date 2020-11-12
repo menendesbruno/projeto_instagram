@@ -9,7 +9,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(243, 243, 243);
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,4 +30,111 @@ body{
 }
 .Celular img{
     height: 40rem;
+}
+.foto-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.grupo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 5px solid lightgray;
+}
+.grupo:nth-child(1){
+    min-height: 19rem;
+}
+.logo{
+    height: 3rem;
+}
+.foto-perfil{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.login{
+    background-color: #0095f6;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+.logout{
+    color: #0095f6;
+    margin-top: 1rem;
+}
+.not-account{
+    color: rgb(160, 160, 160);
+}
+.link-blue{
+    color: #0095f6;
+}
+.get-the-app{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+.download{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+.app-download{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+.app-download:nth-child(1){
+    background-image: url('./ios.png');
+}
+.app-download:nth-child(2){
+    background-image: url("./android.png");
+}
+@media (max-width:1024px){
+    .principal{
+        width: 90%;
+    }
+}
+@media (max-width:650px){
+    body{
+        background-color: #ffffff;
+    }
+    .principal{
+        width: 90%;
+    }
+    .Celular{
+        display: none;
+    }
+    .continue{
+        width: 100%;
+    }
+    .grupo{
+        border: 1px solid transparent;
+    }
 }
